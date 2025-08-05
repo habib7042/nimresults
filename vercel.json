@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npx prisma generate && next build",
+  "buildCommand": "node prisma/build-hook.js && next build",
   "outputDirectory": ".next",
-  "installCommand": "npm install && npx prisma generate",
+  "installCommand": "npm install && node prisma/build-hook.js",
   "devCommand": "npm run dev",
   "framework": "nextjs",
   "functions": {

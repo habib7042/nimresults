@@ -20,6 +20,15 @@ const nextConfig: NextConfig = {
     // 构建时忽略ESLint错误
     ignoreDuringBuilds: true,
   },
+  // Add experimental features for better Prisma support
+  experimental: {
+    // Enable if you want to use server actions
+    serverActions: true,
+  },
+  // Ensure proper handling of environment variables
+  env: {
+    CUSTOM_KEY: process.env.CUSTOM_KEY,
+  },
 };
 
 export default nextConfig;
