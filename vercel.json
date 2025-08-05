@@ -1,7 +1,7 @@
 {
-  "buildCommand": "node prisma/build-hook.js && next build",
+  "buildCommand": "bash vercel-build.sh",
   "outputDirectory": ".next",
-  "installCommand": "npm install && node prisma/build-hook.js",
+  "installCommand": "npm install && npx prisma generate",
   "devCommand": "npm run dev",
   "framework": "nextjs",
   "functions": {
