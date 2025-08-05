@@ -1,141 +1,208 @@
-# 🚀 Welcome to Z.ai Code Scaffold
+# 🎓 বিদ্যালয় ফলাফল ব্যবস্থাপনা সিস্টেম
 
-A modern, production-ready web application scaffold powered by cutting-edge technologies, designed to accelerate your development with [Z.ai](https://chat.z.ai)'s AI-powered coding assistance.
+[School Result Management System](https://nimresults.vercel.app) - A comprehensive web application for managing and publishing school results with admin panel and student result viewing.
 
-## ✨ Technology Stack
+## ✨ বৈশিষ্ট্য
 
-This scaffold provides a robust foundation built with:
+### 🎯 স্টুডেন্ট ফিচার্স
+- **ফলাফল অনুসন্ধান**: ক্লাস, রোল নম্বর, সেমিস্টার এবং বছর দিয়ে ফলাফল খুঁজুন
+- **ফলাফল প্রদর্শন**: সাবজেক্টভিত্তিক ফলাফল সহ গ্রেডিং সিস্টেম
+- **🖨️ প্রিন্ট ফাংশন**: ফলাফল প্রিন্ট করার সুবিধা
+- **রেসপন্সিভ ডিজাইন**: সকল ডিভাইসে কাজ করে
 
-### 🎯 Core Framework
-- **⚡ Next.js 15** - The React framework for production with App Router
-- **📘 TypeScript 5** - Type-safe JavaScript for better developer experience
-- **🎨 Tailwind CSS 4** - Utility-first CSS framework for rapid UI development
+### 🔐 এডমিন ফিচার্স
+- **ক্লাস ম্যানেজমেন্ট**: নতুন ক্লাস তৈরি এবং ব্যবস্থাপনা
+- **স্টুডেন্ট ম্যানেজমেন্ট**: স্টুডেন্ট তথ্য যোগ এবং ব্যবস্থাপনা
+- **সাবজেক্ট ম্যানেজমেন্ট**: সাবজেক্ট তৈরি এবং ব্যবস্থাপনা
+- **রেজাল্ট ম্যানেজমেন্ট**: ফলাফল যোগ এবং ব্যবস্থাপনা
+- **ড্যাশবোর্ড**: সম্পূর্ণ এডমিন কন্ট্রোল প্যানেল
 
-### 🧩 UI Components & Styling
-- **🧩 shadcn/ui** - High-quality, accessible components built on Radix UI
-- **🎯 Lucide React** - Beautiful & consistent icon library
-- **🌈 Framer Motion** - Production-ready motion library for React
-- **🎨 Next Themes** - Perfect dark mode in 2 lines of code
+### 🎨 গ্রেডিং সিস্টেম
+- **A+**: 79-100 (🟢 সবুজ)
+- **A**: 69-78 (🔵 নীল)
+- **A-**: 59-68 (🔷 সায়ান)
+- **B**: 49-58 (🟣 বেগুনি)
+- **C**: 39-48 (🟡 হলুদ)
+- **D**: 33-38 (🟠 কমলা)
+- **F**: 0-32 (🔴 লাল)
 
-### 📋 Forms & Validation
-- **🎣 React Hook Form** - Performant forms with easy validation
-- **✅ Zod** - TypeScript-first schema validation
+## 🚀 ডেমো অ্যাক্সেস
 
-### 🔄 State Management & Data Fetching
-- **🐻 Zustand** - Simple, scalable state management
-- **🔄 TanStack Query** - Powerful data synchronization for React
-- **🌐 Axios** - Promise-based HTTP client
+### স্টুডেন্ট ফলাফল দেখুন
+সরাসরি হোমপেজ থেকে ফলাফল অনুসন্ধান করুন।
 
-### 🗄️ Database & Backend
-- **🗄️ Prisma** - Next-generation Node.js and TypeScript ORM
-- **🔐 NextAuth.js** - Complete open-source authentication solution
+### এডমিন প্যানেল
+- **ইমেইল**: `admin@school.com`
+- **পাসওয়ার্ড**: `admin123`
 
-### 🎨 Advanced UI Features
-- **📊 TanStack Table** - Headless UI for building tables and datagrids
-- **🖱️ DND Kit** - Modern drag and drop toolkit for React
-- **📊 Recharts** - Redefined chart library built with React and D3
-- **🖼️ Sharp** - High performance image processing
+## 🛠️ টেকনোলজি স্ট্যাক
 
-### 🌍 Internationalization & Utilities
-- **🌍 Next Intl** - Internationalization library for Next.js
-- **📅 Date-fns** - Modern JavaScript date utility library
-- **🪝 ReactUse** - Collection of essential React hooks for modern development
+- **ফ্রন্টএন্ড**: Next.js 15, TypeScript, Tailwind CSS
+- **ব্যাকএন্ড**: Next.js API Routes
+- **ডাটাবেস**: Prisma ORM (SQLite/MySQL/PostgreSQL)
+- **UI কম্পোনেন্ট**: shadcn/ui
+- **আইকন**: Lucide React
+- **ডিপ্লয়মেন্ট**: Vercel
 
-## 🎯 Why This Scaffold?
+## 📦 ইনস্টলেশন
 
-- **🏎️ Fast Development** - Pre-configured tooling and best practices
-- **🎨 Beautiful UI** - Complete shadcn/ui component library with advanced interactions
-- **🔒 Type Safety** - Full TypeScript configuration with Zod validation
-- **📱 Responsive** - Mobile-first design principles with smooth animations
-- **🗄️ Database Ready** - Prisma ORM configured for rapid backend development
-- **🔐 Auth Included** - NextAuth.js for secure authentication flows
-- **📊 Data Visualization** - Charts, tables, and drag-and-drop functionality
-- **🌍 i18n Ready** - Multi-language support with Next Intl
-- **🚀 Production Ready** - Optimized build and deployment settings
-- **🤖 AI-Friendly** - Structured codebase perfect for AI assistance
+### লোকাল ডেভেলপমেন্ট
 
-## 🚀 Quick Start
-
+1. **রেপোসিটরি ক্লোন করুন**
 ```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Start production server
-npm start
+git clone https://github.com/habib7042/nimresults.git
+cd nimresults
 ```
 
-Open [http://localhost:3000](http://localhost:3000) to see your application running.
+2. **ডিপেন্ডেন্সি ইনস্টল করুন**
+```bash
+npm install
+```
 
-## 🤖 Powered by Z.ai
+3. **এনভায়রনমেন্ট ভেরিয়েবল সেটআপ করুন**
+```bash
+cp .env.example .env
+```
 
-This scaffold is optimized for use with [Z.ai](https://chat.z.ai) - your AI assistant for:
+4. **ডাটাবেস সেটআপ করুন**
+```bash
+npx prisma generate
+npx prisma db push
+npm run db:seed
+```
 
-- **💻 Code Generation** - Generate components, pages, and features instantly
-- **🎨 UI Development** - Create beautiful interfaces with AI assistance  
-- **🔧 Bug Fixing** - Identify and resolve issues with intelligent suggestions
-- **📝 Documentation** - Auto-generate comprehensive documentation
-- **🚀 Optimization** - Performance improvements and best practices
+5. **ডেভেলপমেন্ট সার্ভার চালু করুন**
+```bash
+npm run dev
+```
 
-Ready to build something amazing? Start chatting with Z.ai at [chat.z.ai](https://chat.z.ai) and experience the future of AI-powered development!
+অ্যাপ্লিকেশনটি `http://localhost:3000` এ চলবে।
 
-## 📁 Project Structure
+## 🌐 ডিপ্লয়মেন্ট
+
+### Vercel এ ডিপ্লয় করুন
+
+1. **Vercel এ ইম্পোর্ট করুন**
+   - [Vercel](https://vercel.com) এ যান
+   - "New Project" ক্লিক করুন
+   - এই রেপোসিটরি ইম্পোর্ট করুন
+
+2. **এনভায়রনমেন্ট ভেরিয়েবল সেট করুন**
+   ```bash
+   DATABASE_URL=your_database_connection_string
+   ```
+
+3. **ডিপ্লয় করুন**
+   - "Deploy" বাটন ক্লিক করুন
+
+### ডাটাবেস অপশন
+
+**PlanetScale (সুপারিশকৃত):**
+```bash
+DATABASE_URL="mysql://username:password@host/school_results?sslaccept=strict"
+```
+
+**Supabase:**
+```bash
+DATABASE_URL="postgresql://postgres:[YOUR-PASSWORD]@db.[YOUR-PROJECT].supabase.co:5432/postgres"
+```
+
+**Neon:**
+```bash
+DATABASE_URL="postgresql://user:password@host/dbname?sslmode=require"
+```
+
+## 📁 প্রোজেক্ট স্ট্রাকচার
 
 ```
 src/
-├── app/                 # Next.js App Router pages
-├── components/          # Reusable React components
-│   └── ui/             # shadcn/ui components
-├── hooks/              # Custom React hooks
-└── lib/                # Utility functions and configurations
+├── app/
+│   ├── api/                 # API রাউটস
+│   │   ├── admin/          # এডমিন API
+│   │   └── results/        # রেজাল্ট API
+│   ├── admin/             # এডমিন প্যানেল
+│   ├── globals.css        # গ্লোবাল স্টাইল
+│   ├── layout.tsx         # রুট লেআউট
+│   └── page.tsx           # হোম পেজ
+├── components/
+│   └── ui/                # shadcn/ui কম্পোনেন্টস
+├── hooks/                 # কাস্টম হুকস
+└── lib/
+    ├── db.ts             # ডাটাবেস কানেকশন
+    ├── seed.ts           # ডাটাবেস সীড
+    ├── socket.ts         # সকেট কনফিগ
+    └── utils.ts          # ইউটিলিটি ফাংশন
 ```
 
-## 🎨 Available Features & Components
+## 🗄️ ডাটাবেস স্কিমা
 
-This scaffold includes a comprehensive set of modern web development tools:
+### মডেলস
+- **Admin**: এডমিন ইউজার
+- **Class**: ক্লাস তথ্য
+- **Student**: স্টুডেন্ট তথ্য
+- **Subject**: সাবজেক্ট তথ্য
+- **Result**: ফলাফল তথ্য
 
-### 🧩 UI Components (shadcn/ui)
-- **Layout**: Card, Separator, Aspect Ratio, Resizable Panels
-- **Forms**: Input, Textarea, Select, Checkbox, Radio Group, Switch
-- **Feedback**: Alert, Toast (Sonner), Progress, Skeleton
-- **Navigation**: Breadcrumb, Menubar, Navigation Menu, Pagination
-- **Overlay**: Dialog, Sheet, Popover, Tooltip, Hover Card
-- **Data Display**: Badge, Avatar, Calendar
+### রিলেশনশিপ
+- একটি ক্লাসে একাধিক স্টুডেন্ট থাকতে পারে
+- একটি ক্লাসে একাধিক সাবজেক্ট থাকতে পারে
+- একটি স্টুডেন্টের একাধিক রেজাল্ট থাকতে পারে
+- একটি সাবজেক্টের একাধিক রেজাল্ট থাকতে পারে
 
-### 📊 Advanced Data Features
-- **Tables**: Powerful data tables with sorting, filtering, pagination (TanStack Table)
-- **Charts**: Beautiful visualizations with Recharts
-- **Forms**: Type-safe forms with React Hook Form + Zod validation
+## 🔧 এপিআই এন্ডপয়েন্টস
 
-### 🎨 Interactive Features
-- **Animations**: Smooth micro-interactions with Framer Motion
-- **Drag & Drop**: Modern drag-and-drop functionality with DND Kit
-- **Theme Switching**: Built-in dark/light mode support
+### স্টুডেন্ট এপিআই
+- `POST /api/results/search` - ফলাফল অনুসন্ধান
 
-### 🔐 Backend Integration
-- **Authentication**: Ready-to-use auth flows with NextAuth.js
-- **Database**: Type-safe database operations with Prisma
-- **API Client**: HTTP requests with Axios + TanStack Query
-- **State Management**: Simple and scalable with Zustand
+### এডমিন এপিআই
+- `POST /api/admin/login` - এডমিন লগইন
+- `GET/POST /api/admin/classes` - ক্লাস ম্যানেজমেন্ট
+- `GET/POST /api/admin/students` - স্টুডেন্ট ম্যানেজমেন্ট
+- `GET/POST /api/admin/subjects` - সাবজেক্ট ম্যানেজমেন্ট
+- `GET/POST /api/admin/results` - রেজাল্ট ম্যানেজমেন্ট
 
-### 🌍 Production Features
-- **Internationalization**: Multi-language support with Next Intl
-- **Image Optimization**: Automatic image processing with Sharp
-- **Type Safety**: End-to-end TypeScript with Zod validation
-- **Essential Hooks**: 100+ useful React hooks with ReactUse for common patterns
+## 🎨 স্ক্রিনশট
 
-## 🤝 Get Started with Z.ai
+### স্টুডেন্ট ইন্টারফেস
+- ফলাফল অনুসন্ধান ফর্ম
+- ফলাফল প্রদর্শন টেবিল
+- প্রিন্ট বাটন
 
-1. **Clone this scaffold** to jumpstart your project
-2. **Visit [chat.z.ai](https://chat.z.ai)** to access your AI coding assistant
-3. **Start building** with intelligent code generation and assistance
-4. **Deploy with confidence** using the production-ready setup
+### এডমিন ইন্টারফেস
+- লগইন পেজ
+- ড্যাশবোর্ড
+- ক্লাস/স্টুডেন্ট/সাবজেক্ট/রেজাল্ট ম্যানেজমেন্ট
+
+## 🤝 কন্ট্রিবিউশন
+
+কন্ট্রিবিউশন করতে চাইলে:
+
+1. রেপোসিটরি ফর্ক করুন
+2. নতুন ব্রাঞ্চ তৈরি করুন (`git checkout -b feature/amazing-feature`)
+3. আপনার পরিবর্তন কমিট করুন (`git commit -m 'Add some amazing feature'`)
+4. ব্রাঞ্চ পুশ করুন (`git push origin feature/amazing-feature`)
+5. পুল রিকোয়েস্ট খুলুন
+
+## 📄 লাইসেন্স
+
+এই প্রোজেক্টটি MIT লাইসেন্সের অধীনে লাইসেন্সকৃত।
+
+## 🙏 কৃতজ্ঞতা
+
+- [Next.js](https://nextjs.org/) - React ফ্রেমওয়ার্ক
+- [Prisma](https://prisma.io/) - ডাটাবেস টুলকিট
+- [Tailwind CSS](https://tailwindcss.com/) - CSS ফ্রেমওয়ার্ক
+- [shadcn/ui](https://ui.shadcn.com/) - UI কম্পোনেন্ট লাইব্রেরি
+- [Vercel](https://vercel.com/) - ডিপ্লয়মেন্ট প্ল্যাটফর্ম
+
+## 📞 যোগাযোগ
+
+কোনো প্রশ্ন বা সমস্যা থাকলে:
+- ইস্যু খুলুন: [GitHub Issues](https://github.com/habib7042/nimresults/issues)
+- ইমেইল: [আপনার ইমেইল]
 
 ---
 
-Built with ❤️ for the developer community. Supercharged by [Z.ai](https://chat.z.ai) 🚀
+**তৈরি করেছেন**: [আপনার নাম]  
+**লাইভ সাইট**: [https://nimresults.vercel.app](https://nimresults.vercel.app)  
+**সর্বশেষ আপডেট**: আগস্ট ২০২৪
